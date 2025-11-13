@@ -1,0 +1,4 @@
+*.jks
+*.properties
+!android.jks
+!android.properties

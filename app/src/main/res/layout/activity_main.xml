@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/ip_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="no"
+            android:gravity="start"
+            android:hint="192.168.x.xx"
+            android:importantForAutofill="no"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/dev_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="local_printer"
+            android:gravity="start"
+            android:hint="local_printer"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="local_printer" />
+
+        <EditText
+            android:id="@+id/xml"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:gravity="top|start"
+            android:hint="&lt;epos-print xmlns=&quot;http://www.epson-pos.com/schemas/2011/03/epos-print&quot;>\n    &lt;text lang=&quot;ja&quot; smooth=&quot;true&quot;>Intelligent Printer&amp;#10;&lt;/text>\n    &lt;barcode type=&quot;ean13&quot; width=&quot;2&quot; height=&quot;48&quot;>201234567890&lt;/barcode>\n    &lt;feed unit=&quot;24&quot;/>\n    &lt;image width=&quot;8&quot; height=&quot;48&quot;>8PDw8A8PDw/w8PDwDw8PD/Dw8PAPDw8P8PDw8A8PDw/w8PDwDw8PD/Dw8PAPDw8P&lt;/image>\n    &lt;cut/>\n&lt;/epos-print>"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:text="&lt;epos-print xmlns=&quot;http://www.epson-pos.com/schemas/2011/03/epos-print&quot;>\n    &lt;text lang=&quot;ja&quot; smooth=&quot;true&quot;>Intelligent Printer&amp;#10;&lt;/text>\n    &lt;barcode type=&quot;ean13&quot; width=&quot;2&quot; height=&quot;48&quot;>201234567890&lt;/barcode>\n    &lt;feed unit=&quot;24&quot;/>\n    &lt;image width=&quot;8&quot; height=&quot;48&quot;>8PDw8A8PDw/w8PDwDw8PD/Dw8PAPDw8P8PDw8A8PDw/w8PDwDw8PD/Dw8PAPDw8P&lt;/image>\n    &lt;cut/>\n&lt;/epos-print>" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="送信" />
+
+    </LinearLayout>
+</ScrollView>
